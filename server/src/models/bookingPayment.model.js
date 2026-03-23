@@ -18,16 +18,6 @@ const bookingPaymentSchema = new mongoose.Schema(
       index: true
     },
 
-
-
-    paymentCode: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-      uppercase: true
-    },
-
     method: {
       type: String,
       enum: PAYMENT_METHODS,

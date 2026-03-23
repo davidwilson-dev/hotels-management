@@ -1,0 +1,19 @@
+.card {
+  width: min(100%, 480px);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(18px);
+}
+
+.note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(217, 143, 78, 0.08);
+}
+
+.footerMeta {
+  padding-top: 4px;
+}

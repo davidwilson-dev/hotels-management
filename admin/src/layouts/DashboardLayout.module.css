@@ -1,0 +1,70 @@
+.shell {
+  min-height: 100vh;
+}
+
+.appBar {
+  backdrop-filter: blur(16px);
+  background: rgba(245, 241, 234, 0.74);
+  border-bottom: 1px solid rgba(13, 92, 99, 0.08);
+}
+
+.toolbar {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.drawerContent {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(217, 143, 78, 0.12), transparent 36%),
+    linear-gradient(180deg, rgba(255, 251, 245, 1), rgba(245, 241, 234, 0.95));
+}
+
+.navItem {
+  border-radius: 18px;
+}
+
+.conciergeCard {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.profileCard {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(13, 92, 99, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.main {
+  min-height: 100vh;
+  margin-left: auto;
+  padding: 24px;
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    min-height: 92px;
+    align-items: flex-start;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .main {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
