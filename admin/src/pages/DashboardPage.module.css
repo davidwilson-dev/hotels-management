@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroCard {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(217, 143, 78, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(255, 251, 245, 0.98), rgba(255, 255, 255, 0.96));
+}
+
+.listBlock {
+  display: grid;
+  gap: 14px;
+}
+
+.listItem,
+.serviceItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(13, 92, 99, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.serviceItem {
+  justify-content: flex-start;
+}
+
+.tableWrap {
+  overflow: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(13, 92, 99, 0.08);
+}
+
+@media (max-width: 720px) {
+  .listItem,
+  .serviceItem {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
